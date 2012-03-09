@@ -31,6 +31,6 @@ Feature: heroku integration
     When I run `heroku pt:logs` within the project
     Then it should fail with:
     """
-    First, please enable the Papertrail addon for this application
+    Please add the Papertrail addon to this application
 
     """
