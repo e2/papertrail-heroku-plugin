@@ -1,0 +1,16 @@
+heroku:
+  # WARNING! The tests create and destroy Heroku apps
+  email: user@example.org
+  token: abc123123123123123123123123123123
+
+papertrail:
+  syslog:
+    host: logs.papertrailapp.com
+    port: 12345
+
+  addon:
+    token: abc12345ABCDEF123456
+
+vcr_filtering:
+  # set to ip to hide in your PT logs
+  ip: 172.160.35.120
