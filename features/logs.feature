@@ -3,19 +3,21 @@ Feature: heroku integration
   As a heroku user
   I want to have a working heroku papertrail plugin
 
-  Scenario: Install and use
-    Given I have a rails app with git
-    And it is on heroku
-    And it uses the papertrail addon
+  Background: install plugin
+    Given I have a rails app "test1" with git
+    And I add "test1" to heroku
     And I install heroku-papertrail
-    And the following new logs:
+
+  Scenario: Install and use
+    Given I configure the papertrail addon within "test1"
+    And the following events are logged:
     """
     start server
     crash
     restart
 
     """
-    When I successfully run `heroku pt:logs` within the project
+    When I successfully `heroku pt:logs` within "test1"
     Then I should see these logs:
     """
     start server
@@ -24,11 +26,8 @@ Feature: heroku integration
 
     """
 
-  Scenario: It should show info when not token
-    Given I have a rails app with git
-    And it is on heroku
-    And I install heroku-papertrail
-    When I run `heroku pt:logs` within the project
+  Scenario: It should show info when no token
+    When I `heroku pt:logs` within "test1"
     Then it should fail with:
     """
     Please add the Papertrail addon to this application
