@@ -1,0 +1,289 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://<HEROKU_LOGIN>:<HEROKU_TOKEN>@api.heroku.com/apps
+    body:
+      encoding: US-ASCII
+      string: app[stack]=
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      X-Heroku-Api-Version:
+      - '2'
+      User-Agent:
+      - heroku-gem/2.21.2
+      X-Ruby-Version:
+      - 1.9.3
+      X-Ruby-Platform:
+      - x86_64-linux
+      Content-Length:
+      - '11'
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 11 Mar 2012 17:37:58 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Location:
+      - http://hollow-warrior-8203.heroku.com/
+      X-Runtime:
+      - '4851'
+      Content-Length:
+      - '757'
+      Set-Cookie:
+      - heroku_core_session=BAh7BzoQX2NzcmZfdG9rZW4iMThObm9nN1psUzY4U3pISnozL3pLQ1B3OEdvT2c2Ulo1Y3ZvZ3VpempZTXc9Og9zZXNzaW9uX2lkIiVlYmMxYmUyNzhmNDRiMWIwODNjZjc3NDVlNGNlZDc5Mw%3D%3D--a620a651ba2b49bb21800665eb3148928d6576cd;
+        path=/; secure; HttpOnly
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=500
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<app>\n  <created-at
+        type=\"datetime\">2012-03-11T10:37:53-07:00</created-at>\n  <dynos type=\"integer\">1</dynos>\n
+        \ <name>hollow-warrior-8203</name>\n  <repo-size type=\"integer\" nil=\"true\"></repo-size>\n
+        \ <requested-stack nil=\"true\"></requested-stack>\n  <slug-size type=\"integer\"
+        nil=\"true\"></slug-size>\n  <stack>bamboo-mri-1.9.2</stack>\n  <workers type=\"integer\">0</workers>\n
+        \ <create-status type=\"symbol\">creating</create-status>\n  <repo-migrate-status
+        type=\"symbol\">complete</repo-migrate-status>\n  <id>app3233684@heroku.com</id>\n
+        \ <domain_name></domain_name>\n  <owner><EMAIL></owner>\n  <web_url>http://hollow-warrior-8203.heroku.com/</web_url>\n
+        \ <git_url>git@heroku.com:hollow-warrior-8203.git</git_url>\n</app>\n"
+    http_version: 
+  recorded_at: Sun, 11 Mar 2012 17:40:10 GMT
+- request:
+    method: get
+    uri: https://<HEROKU_LOGIN>:<HEROKU_TOKEN>@api.heroku.com/apps/hollow-warrior-8203
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      X-Heroku-Api-Version:
+      - '2'
+      User-Agent:
+      - heroku-gem/2.21.2
+      X-Ruby-Version:
+      - 1.9.3
+      X-Ruby-Platform:
+      - x86_64-linux
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 11 Mar 2012 17:37:59 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Etag:
+      - ! '"91101772bf238841f994a59da60178fc"'
+      X-Runtime:
+      - '355'
+      Content-Length:
+      - '757'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Strict-Transport-Security:
+      - max-age=500
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<app>\n  <created-at
+        type=\"datetime\">2012-03-11T10:37:53-07:00</created-at>\n  <dynos type=\"integer\">1</dynos>\n
+        \ <name>hollow-warrior-8203</name>\n  <repo-size type=\"integer\" nil=\"true\"></repo-size>\n
+        \ <requested-stack nil=\"true\"></requested-stack>\n  <slug-size type=\"integer\"
+        nil=\"true\"></slug-size>\n  <stack>bamboo-mri-1.9.2</stack>\n  <workers type=\"integer\">0</workers>\n
+        \ <create-status type=\"symbol\">creating</create-status>\n  <repo-migrate-status
+        type=\"symbol\">complete</repo-migrate-status>\n  <id>app3233684@heroku.com</id>\n
+        \ <domain_name></domain_name>\n  <owner><EMAIL></owner>\n  <web_url>http://hollow-warrior-8203.heroku.com/</web_url>\n
+        \ <git_url>git@heroku.com:hollow-warrior-8203.git</git_url>\n</app>\n"
+    http_version: 
+  recorded_at: Sun, 11 Mar 2012 17:40:11 GMT
+- request:
+    method: get
+    uri: https://<HEROKU_LOGIN>:<HEROKU_TOKEN>@api.heroku.com/apps/hollow-warrior-8203/collaborators
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      X-Heroku-Api-Version:
+      - '2'
+      User-Agent:
+      - heroku-gem/2.21.2
+      X-Ruby-Version:
+      - 1.9.3
+      X-Ruby-Platform:
+      - x86_64-linux
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 11 Mar 2012 17:38:00 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Etag:
+      - ! '"834060113976974e62a61f62e64ae3d8"'
+      X-Runtime:
+      - '158'
+      Content-Length:
+      - '170'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Strict-Transport-Security:
+      - max-age=500
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<collaborators>\n  <collaborator>\n
+        \   <email><EMAIL></email>\n    <access>edit</access>\n  </collaborator>\n</collaborators>\n"
+    http_version: 
+  recorded_at: Sun, 11 Mar 2012 17:40:12 GMT
+- request:
+    method: get
+    uri: https://<HEROKU_LOGIN>:<HEROKU_TOKEN>@api.heroku.com/apps/hollow-warrior-8203/addons
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Heroku-Api-Version:
+      - '2'
+      User-Agent:
+      - heroku-gem/2.21.2
+      X-Ruby-Version:
+      - 1.9.3
+      X-Ruby-Platform:
+      - x86_64-linux
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 11 Mar 2012 17:38:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Etag:
+      - ! '"a8e5833e11b21f3697008d35ff4a5e4d"'
+      X-Runtime:
+      - '164'
+      Content-Length:
+      - '283'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Strict-Transport-Security:
+      - max-age=500
+    body:
+      encoding: US-ASCII
+      string: ! '[{"beta":false,"configured":true,"url":"http://devcenter.heroku.com/articles/logging","state":"public","name":"logging:basic","description":"Basic
+        Logging"},{"beta":false,"configured":true,"url":null,"state":"public","name":"shared-database:5mb","description":"Shared
+        Database 5MB"}]'
+    http_version: 
+  recorded_at: Sun, 11 Mar 2012 17:40:13 GMT
+- request:
+    method: put
+    uri: https://<HEROKU_LOGIN>:<HEROKU_TOKEN>@api.heroku.com/apps/hollow-warrior-8203/status
+    body:
+      encoding: ASCII-8BIT
+      string: !binary ""
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      X-Heroku-Api-Version:
+      - '2'
+      User-Agent:
+      - heroku-gem/2.21.2
+      X-Ruby-Version:
+      - 1.9.3
+      X-Ruby-Platform:
+      - x86_64-linux
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 11 Mar 2012 17:38:02 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      Location:
+      - http://hollow-warrior-8203.heroku.com/
+      X-Runtime:
+      - '218'
+      Content-Length:
+      - '792'
+      Set-Cookie:
+      - heroku_core_session=BAh7BzoQX2NzcmZfdG9rZW4iMWpBbTRybkJiZXpoT21tQlc0TFIyd3k1OWJuRDRVY0FlV0J6TUhlUDJjRVE9Og9zZXNzaW9uX2lkIiU5NjI0NDM4YzRiMDVhODM5ZjkyMjMzOGY3NjA1YmFjYg%3D%3D--02127ffd944ed0960b1cb1f1ad0008a69f57b905;
+        path=/; secure; HttpOnly
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=500
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<app>\n  <created-at
+        type=\"datetime\">2012-03-11T10:37:53-07:00</created-at>\n  <dynos type=\"integer\">1</dynos>\n
+        \ <name>hollow-warrior-8203</name>\n  <repo-size type=\"integer\" nil=\"true\"></repo-size>\n
+        \ <requested-stack nil=\"true\"></requested-stack>\n  <slug-size type=\"integer\"
+        nil=\"true\"></slug-size>\n  <stack>bamboo-mri-1.9.2</stack>\n  <workers type=\"integer\">0</workers>\n
+        \ <create-status type=\"symbol\">complete</create-status>\n  <repo-migrate-status
+        type=\"symbol\">complete</repo-migrate-status>\n  <id>app3233684@heroku.com</id>\n
+        \ <domain_name></domain_name>\n  <owner><EMAIL></owner>\n  <web_url>http://hollow-warrior-8203.heroku.com/</web_url>\n
+        \ <git_url>git@heroku.com:hollow-warrior-8203.git</git_url>\n  <database_size>0</database_size>\n</app>\n"
+    http_version: 
+  recorded_at: Sun, 11 Mar 2012 17:40:14 GMT
+recorded_with: VCR 2.0.0

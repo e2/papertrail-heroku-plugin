@@ -1,0 +1,289 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://<HEROKU_LOGIN>:<HEROKU_TOKEN>@api.heroku.com/apps
+    body:
+      encoding: US-ASCII
+      string: app[stack]=
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      X-Heroku-Api-Version:
+      - '2'
+      User-Agent:
+      - heroku-gem/2.21.2
+      X-Ruby-Version:
+      - 1.9.3
+      X-Ruby-Platform:
+      - x86_64-linux
+      Content-Length:
+      - '11'
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 11 Mar 2012 17:37:16 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 202 Accepted
+      Location:
+      - http://severe-stream-5145.heroku.com/
+      X-Runtime:
+      - '8589'
+      Content-Length:
+      - '754'
+      Set-Cookie:
+      - heroku_core_session=BAh7BzoQX2NzcmZfdG9rZW4iMUNRWmpnSlhNNGN6djRzYXpLZno3dENtSGZLbkozeFVua0lpWEZ3bGx3THc9Og9zZXNzaW9uX2lkIiU0MzdkOTRmNDdhNmQ3Y2RlYjE4MDRlMTYyYTBlYWU1ZQ%3D%3D--6a52be8a7bc410dff2eb0b43994a056ea534ef16;
+        path=/; secure; HttpOnly
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=500
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<app>\n  <created-at
+        type=\"datetime\">2012-03-11T10:37:07-07:00</created-at>\n  <dynos type=\"integer\">1</dynos>\n
+        \ <name>severe-stream-5145</name>\n  <repo-size type=\"integer\" nil=\"true\"></repo-size>\n
+        \ <requested-stack nil=\"true\"></requested-stack>\n  <slug-size type=\"integer\"
+        nil=\"true\"></slug-size>\n  <stack>bamboo-mri-1.9.2</stack>\n  <workers type=\"integer\">0</workers>\n
+        \ <create-status type=\"symbol\">creating</create-status>\n  <repo-migrate-status
+        type=\"symbol\">complete</repo-migrate-status>\n  <id>app3233675@heroku.com</id>\n
+        \ <domain_name></domain_name>\n  <owner><EMAIL></owner>\n  <web_url>http://severe-stream-5145.heroku.com/</web_url>\n
+        \ <git_url>git@heroku.com:severe-stream-5145.git</git_url>\n</app>\n"
+    http_version: 
+  recorded_at: Sun, 11 Mar 2012 17:39:28 GMT
+- request:
+    method: get
+    uri: https://<HEROKU_LOGIN>:<HEROKU_TOKEN>@api.heroku.com/apps/severe-stream-5145
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      X-Heroku-Api-Version:
+      - '2'
+      User-Agent:
+      - heroku-gem/2.21.2
+      X-Ruby-Version:
+      - 1.9.3
+      X-Ruby-Platform:
+      - x86_64-linux
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 11 Mar 2012 17:37:17 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Etag:
+      - ! '"9488a7215d2a11f36a0da2327532ed4d"'
+      X-Runtime:
+      - '178'
+      Content-Length:
+      - '789'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Strict-Transport-Security:
+      - max-age=500
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<app>\n  <created-at
+        type=\"datetime\">2012-03-11T10:37:07-07:00</created-at>\n  <dynos type=\"integer\">1</dynos>\n
+        \ <name>severe-stream-5145</name>\n  <repo-size type=\"integer\" nil=\"true\"></repo-size>\n
+        \ <requested-stack nil=\"true\"></requested-stack>\n  <slug-size type=\"integer\"
+        nil=\"true\"></slug-size>\n  <stack>bamboo-mri-1.9.2</stack>\n  <workers type=\"integer\">0</workers>\n
+        \ <create-status type=\"symbol\">complete</create-status>\n  <repo-migrate-status
+        type=\"symbol\">complete</repo-migrate-status>\n  <id>app3233675@heroku.com</id>\n
+        \ <domain_name></domain_name>\n  <owner><EMAIL></owner>\n  <web_url>http://severe-stream-5145.heroku.com/</web_url>\n
+        \ <git_url>git@heroku.com:severe-stream-5145.git</git_url>\n  <database_size>0</database_size>\n</app>\n"
+    http_version: 
+  recorded_at: Sun, 11 Mar 2012 17:39:29 GMT
+- request:
+    method: get
+    uri: https://<HEROKU_LOGIN>:<HEROKU_TOKEN>@api.heroku.com/apps/severe-stream-5145/collaborators
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      X-Heroku-Api-Version:
+      - '2'
+      User-Agent:
+      - heroku-gem/2.21.2
+      X-Ruby-Version:
+      - 1.9.3
+      X-Ruby-Platform:
+      - x86_64-linux
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 11 Mar 2012 17:37:18 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Etag:
+      - ! '"834060113976974e62a61f62e64ae3d8"'
+      X-Runtime:
+      - '147'
+      Content-Length:
+      - '170'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Strict-Transport-Security:
+      - max-age=500
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<collaborators>\n  <collaborator>\n
+        \   <email><EMAIL></email>\n    <access>edit</access>\n  </collaborator>\n</collaborators>\n"
+    http_version: 
+  recorded_at: Sun, 11 Mar 2012 17:39:30 GMT
+- request:
+    method: get
+    uri: https://<HEROKU_LOGIN>:<HEROKU_TOKEN>@api.heroku.com/apps/severe-stream-5145/addons
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Heroku-Api-Version:
+      - '2'
+      User-Agent:
+      - heroku-gem/2.21.2
+      X-Ruby-Version:
+      - 1.9.3
+      X-Ruby-Platform:
+      - x86_64-linux
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 11 Mar 2012 17:37:18 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Etag:
+      - ! '"a8e5833e11b21f3697008d35ff4a5e4d"'
+      X-Runtime:
+      - '157'
+      Content-Length:
+      - '283'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Strict-Transport-Security:
+      - max-age=500
+    body:
+      encoding: US-ASCII
+      string: ! '[{"beta":false,"configured":true,"url":"http://devcenter.heroku.com/articles/logging","state":"public","name":"logging:basic","description":"Basic
+        Logging"},{"beta":false,"configured":true,"url":null,"state":"public","name":"shared-database:5mb","description":"Shared
+        Database 5MB"}]'
+    http_version: 
+  recorded_at: Sun, 11 Mar 2012 17:39:30 GMT
+- request:
+    method: put
+    uri: https://<HEROKU_LOGIN>:<HEROKU_TOKEN>@api.heroku.com/apps/severe-stream-5145/status
+    body:
+      encoding: ASCII-8BIT
+      string: !binary ""
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      X-Heroku-Api-Version:
+      - '2'
+      User-Agent:
+      - heroku-gem/2.21.2
+      X-Ruby-Version:
+      - 1.9.3
+      X-Ruby-Platform:
+      - x86_64-linux
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 11 Mar 2012 17:37:19 GMT
+      Content-Type:
+      - application/xml; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 201 Created
+      Location:
+      - http://severe-stream-5145.heroku.com/
+      X-Runtime:
+      - '421'
+      Content-Length:
+      - '789'
+      Set-Cookie:
+      - heroku_core_session=BAh7BzoQX2NzcmZfdG9rZW4iMSsrZWxYeFlZQXhDdXFvMXg2YzB3S1FNN0JiU0VkWG9sZUtRUkpDbEF2NkE9Og9zZXNzaW9uX2lkIiU5OWQwN2QwZjJmMzFhYzJkMzI4MGYyY2ViYTBhMDIxMA%3D%3D--76da09101ab32d95ac52e1af7f722b0c6a62e523;
+        path=/; secure; HttpOnly
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=500
+    body:
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<app>\n  <created-at
+        type=\"datetime\">2012-03-11T10:37:07-07:00</created-at>\n  <dynos type=\"integer\">1</dynos>\n
+        \ <name>severe-stream-5145</name>\n  <repo-size type=\"integer\" nil=\"true\"></repo-size>\n
+        \ <requested-stack nil=\"true\"></requested-stack>\n  <slug-size type=\"integer\"
+        nil=\"true\"></slug-size>\n  <stack>bamboo-mri-1.9.2</stack>\n  <workers type=\"integer\">0</workers>\n
+        \ <create-status type=\"symbol\">complete</create-status>\n  <repo-migrate-status
+        type=\"symbol\">complete</repo-migrate-status>\n  <id>app3233675@heroku.com</id>\n
+        \ <domain_name></domain_name>\n  <owner><EMAIL></owner>\n  <web_url>http://severe-stream-5145.heroku.com/</web_url>\n
+        \ <git_url>git@heroku.com:severe-stream-5145.git</git_url>\n  <database_size>0</database_size>\n</app>\n"
+    http_version: 
+  recorded_at: Sun, 11 Mar 2012 17:39:32 GMT
+recorded_with: VCR 2.0.0

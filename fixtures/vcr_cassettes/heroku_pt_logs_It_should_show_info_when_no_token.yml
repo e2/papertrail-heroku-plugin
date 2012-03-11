@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://<HEROKU_LOGIN>:<HEROKU_TOKEN>@api.heroku.com/apps/hollow-warrior-8203/config_vars
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Heroku-Api-Version:
+      - '2'
+      User-Agent:
+      - heroku-gem/2.21.2
+      X-Ruby-Version:
+      - 1.9.3
+      X-Ruby-Platform:
+      - x86_64-linux
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 11 Mar 2012 17:38:10 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Etag:
+      - ! '"4cf2aaa437a3af3c8cf110d3484ca92c"'
+      X-Runtime:
+      - '149'
+      Content-Length:
+      - '448'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Strict-Transport-Security:
+      - max-age=500
+    body:
+      encoding: US-ASCII
+      string: ! '{"SHARED_DATABASE_URL":"postgres://ndsbtpkxke:K_z7PV3LYUoJT1hhpKeW@ec2-23-21-253-190.compute-1.amazonaws.com/ndsbtpkxke","DATABASE_URL":"postgres://ndsbtpkxke:K_z7PV3LYUoJT1hhpKeW@ec2-23-21-253-190.compute-1.amazonaws.com/ndsbtpkxke","APP_NAME":"hollow-warrior-8203","BUNDLE_WITHOUT":"development:test","URL":"hollow-warrior-8203.heroku.com","COMMIT_HASH":"","LAST_GIT_BY":"","LANG":"en_US.UTF-8","RACK_ENV":"production","STACK":"bamboo-mri-1.9.2"}'
+    http_version: 
+  recorded_at: Sun, 11 Mar 2012 17:40:22 GMT
+recorded_with: VCR 2.0.0

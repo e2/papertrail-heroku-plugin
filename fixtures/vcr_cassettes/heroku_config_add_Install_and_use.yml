@@ -1,0 +1,134 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://<HEROKU_LOGIN>:<HEROKU_TOKEN>@api.heroku.com/apps/severe-stream-5145/config_vars
+    body:
+      encoding: US-ASCII
+      string: ! '{"PAPERTRAIL_API_TOKEN":"<PAPERTRAIL_TOKEN>"}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Heroku-Api-Version:
+      - '2'
+      User-Agent:
+      - heroku-gem/2.21.2
+      X-Ruby-Version:
+      - 1.9.3
+      X-Ruby-Platform:
+      - x86_64-linux
+      Content-Length:
+      - '47'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 11 Mar 2012 17:37:29 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Etag:
+      - ! '"bcbbe031ac864519556695266ba27080"'
+      X-Runtime:
+      - '843'
+      Content-Length:
+      - '490'
+      Set-Cookie:
+      - heroku_core_session=BAh7BzoQX2NzcmZfdG9rZW4iMU1aT0ZpT210UUlmcE1nUk9uS0dWeW5jK2JYQWllQ2ZlaXd2aGlzTTFKQkE9Og9zZXNzaW9uX2lkIiVkZTNlMGZjYTNhNTNmNWNjNzU0NWEyOTUwNmI1NzYxNA%3D%3D--e21e65e4a448ec654f45d95b5ea82fdc991409eb;
+        path=/; secure; HttpOnly
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Strict-Transport-Security:
+      - max-age=500
+    body:
+      encoding: US-ASCII
+      string: ! '{"SHARED_DATABASE_URL":"postgres://yuhgvfdwgt:C_G0AB8HnduFFEt0eZtT@ec2-23-21-246-13.compute-1.amazonaws.com/yuhgvfdwgt","DATABASE_URL":"postgres://yuhgvfdwgt:C_G0AB8HnduFFEt0eZtT@ec2-23-21-246-13.compute-1.amazonaws.com/yuhgvfdwgt","APP_NAME":"severe-stream-5145","BUNDLE_WITHOUT":"development:test","URL":"severe-stream-5145.heroku.com","COMMIT_HASH":"","LAST_GIT_BY":"","PAPERTRAIL_API_TOKEN":"<PAPERTRAIL_TOKEN>","LANG":"en_US.UTF-8","RACK_ENV":"production","STACK":"bamboo-mri-1.9.2"}'
+    http_version: 
+  recorded_at: Sun, 11 Mar 2012 17:39:41 GMT
+- request:
+    method: get
+    uri: https://<HEROKU_LOGIN>:<HEROKU_TOKEN>@api.heroku.com/apps/severe-stream-5145/releases
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Heroku-Api-Version:
+      - '2'
+      User-Agent:
+      - heroku-gem/2.21.2
+      X-Ruby-Version:
+      - 1.9.3
+      X-Ruby-Platform:
+      - x86_64-linux
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "U2VydmVy":
+      - !binary |-
+        bmdpbng=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        U3VuLCAxMSBNYXIgMjAxMiAxNzozNzozMCBHTVQ=
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjsgY2hhcnNldD11dGYtOA==
+      !binary "VHJhbnNmZXItRW5jb2Rpbmc=":
+      - !binary |-
+        Y2h1bmtlZA==
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+      !binary "U3RhdHVz":
+      - !binary |-
+        MjAwIE9L
+      !binary "RXRhZw==":
+      - !binary |-
+        ImJjOGVhMzcwMDMwZDU4ZTFjYzQ3OGQ2NDQ2ZmVmZjU2Ig==
+      !binary "WC1SdW50aW1l":
+      - !binary |-
+        MjEz
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        cHJpdmF0ZSwgbWF4LWFnZT0wLCBtdXN0LXJldmFsaWRhdGU=
+      !binary "U3RyaWN0LVRyYW5zcG9ydC1TZWN1cml0eQ==":
+      - !binary |-
+        bWF4LWFnZT01MDA=
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA7ySyW7bMBCGX4UgfDRtSY6TVKfItmwF8QYtLdqgEChxKguV
+        SFWkbCRB3r1jtAbSDXEP7Y385+P8nOX+ieYtcAMi5Ya61LFsZ2iNhrZNbMsd
+        Xbl4YNaVZdE+FaDzFhlPCKYk4UKQShVFKQs347rMEek0HAnTPvIWvtwUNS+r
+        Qa5qDIHcU/fpuU8bbXhWAV7oAbIjvSslYQ3pbTdhTBiQXuhN71J//ZawkPQC
+        P9zcJelRI/i0NRSToLmSmrr39McvfOxTyWtMTvc2mqJ1XWJdsquq5/6rtY5/
+        qTXssgeiwXTNOdVRb7tN197KR0rDHlpg2qBlzcb2xRixSbKeLf303W0cbJIY
+        KYFUpZoapHENaINMEi5/+3ywg1Z97r4bTjer1W2cBl4UII3C0ovidIHS5P1J
+        WC/wBDJNokESz9k1iqfOYqBplehyUyqJehRjAMWM15lSrG5LZg/eDBz6rwfW
+        p3qH3RRMcHThGtxxnb0co/P3Y7z808p2DboA+cnxrMlGgRf6s3Tmxd7Ei/z0
+        25QapU3RgnaHw4duV+w/iUNh3Gm6sLzJdSBFN5/7xoIPJr6B3GHOiDk2cy4u
+        mT06pm86A9hnXvNHJflBH7UXic5cmNeW7n//+bSaXwEAAP//gidN4lI0RgLG
+        lVaxJuzBm4CNSU7ARhYYCdg5Py8tMx1c5gY4BrgGhQQ5evrEOwZ4xof4e7v6
+        DeYkTG/7BlMZjDWurJQyTdNKTByzyny9A7wzQw2CqqqCQ4dPiW2CnuBjAQAA
+        AP//AwDuxaQBZggAAA==
+    http_version: 
+  recorded_at: Sun, 11 Mar 2012 17:39:42 GMT
+recorded_with: VCR 2.0.0

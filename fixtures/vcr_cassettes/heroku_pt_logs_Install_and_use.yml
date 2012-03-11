@@ -1,0 +1,109 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://<HEROKU_LOGIN>:<HEROKU_TOKEN>@api.heroku.com/apps/severe-stream-5145/config_vars
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Heroku-Api-Version:
+      - '2'
+      User-Agent:
+      - heroku-gem/2.21.2
+      X-Ruby-Version:
+      - 1.9.3
+      X-Ruby-Platform:
+      - x86_64-linux
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 11 Mar 2012 17:37:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Etag:
+      - ! '"97a94f0bec5d56906036c06561aeb2a4"'
+      X-Runtime:
+      - '142'
+      Content-Length:
+      - '490'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Strict-Transport-Security:
+      - max-age=500
+    body:
+      encoding: US-ASCII
+      string: ! '{"SHARED_DATABASE_URL":"postgres://yuhgvfdwgt:C_G0AB8HnduFFEt0eZtT@ec2-23-21-246-13.compute-1.amazonaws.com/yuhgvfdwgt","BUNDLE_WITHOUT":"development:test","APP_NAME":"severe-stream-5145","DATABASE_URL":"postgres://yuhgvfdwgt:C_G0AB8HnduFFEt0eZtT@ec2-23-21-246-13.compute-1.amazonaws.com/yuhgvfdwgt","COMMIT_HASH":"","URL":"severe-stream-5145.heroku.com","PAPERTRAIL_API_TOKEN":"<PAPERTRAIL_TOKEN>","LAST_GIT_BY":"","RACK_ENV":"production","LANG":"en_US.UTF-8","STACK":"bamboo-mri-1.9.2"}'
+    http_version: 
+  recorded_at: Sun, 11 Mar 2012 17:39:46 GMT
+- request:
+    method: get
+    uri: https://papertrailapp.com/api/v1/events/search.json?
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Papertrail-Token:
+      - <PAPERTRAIL_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 11 Mar 2012 17:37:35 GMT
+      Server:
+      - Apache/2.2.17 (Fedora)
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.11
+      Etag:
+      - ! '"4d85eaa9ae682d92da141801446cc742"'
+      X-Shibboleet:
+      - if you see this, we'd like to get you a thank you espresso
+      X-Runtime:
+      - '102'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Strict-Transport-Security:
+      - max-age=31536000
+      Content-Length:
+      - '10528'
+      Status:
+      - '200'
+      Connection:
+      - close
+      Content-Type:
+      - application/json; charset=utf-8
+    body:
+      encoding: US-ASCII
+      string: ! '{"min_id":"115530419080015876","events":[{"source_id":335845,"message":"W,
+        [2012-03-11T18:35:41.119498 #7445]  WARN -- : restart","program":"cucumber","hostname":"<HOSTNAME>","facility":"User","display_received_at":"Mar
+        11 18:33:29","received_at":"2012-03-11T18:33:29+01:00","id":115553019395051522,"severity":"Notice","source_name":"<HOSTNAME>","source_ip":"<LOGGED_IP>"},{"source_id":335845,"message":"W,
+        [2012-03-11T18:39:42.588374 #10003]  WARN -- : crash","program":"cucumber","hostname":"<HOSTNAME>","facility":"User","display_received_at":"Mar
+        11 18:37:30","received_at":"2012-03-11T18:37:30+01:00","id":115554032097177601,"severity":"Notice","source_name":"<HOSTNAME>","source_ip":"<LOGGED_IP>"},{"source_id":335845,"message":"W,
+        [2012-03-11T18:39:42.589267 #10003]  WARN -- : restart","program":"cucumber","hostname":"<HOSTNAME>","facility":"User","display_received_at":"Mar
+        11 18:37:30","received_at":"2012-03-11T18:37:30+01:00","id":115554032118140929,"severity":"Notice","source_name":"<HOSTNAME>","source_ip":"<LOGGED_IP>"},{"source_id":335845,"message":"W,
+        [2012-03-11T18:39:42.572863 #10003]  WARN -- : start server","program":"cucumber","hostname":"<HOSTNAME>","facility":"User","display_received_at":"Mar
+        11 18:37:30","received_at":"2012-03-11T18:37:30+01:00","id":115554032130727937,"severity":"Notice","source_name":"<HOSTNAME>","source_ip":"<LOGGED_IP>"}],"max_id":"115554032130727937","reached_record_limit":true}'
+    http_version: 
+  recorded_at: Sun, 11 Mar 2012 17:39:47 GMT
+recorded_with: VCR 2.0.0
